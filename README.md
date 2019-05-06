@@ -18,6 +18,12 @@ Bernd's POC implementation sends the entire variable scope to Kafka - and in fac
 
 @TODO
 
+One of the great things about BPMN and Zeebe is that there is always more than one way to accomplish something, and although Zeebe doesn't have all the bells and whistles that Camunda does, it _does_ have a powerful set of primitives that - with enough creativity - can get the job done.
+
+![](img/main-workflow.png)
+
+![](img/send-to-kafka.png)
+
 ## An approach by modifying the connector code
 
 I wrote a patch for the connector that allows you to specify which variables to send via a custom header on the "sendMessage" task instance.
